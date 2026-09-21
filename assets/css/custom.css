@@ -1,0 +1,2229 @@
+/* =========================================================
+   EXPERIENCE
+========================================================= */
+
+#experience {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+
+/* =========================================================
+   EXPERIENCE HEADER
+========================================================= */
+
+.experience-header {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-company {
+    color: var(--text-secondary-color);
+    font-size: 0.95rem;
+}
+
+.experience-meta {
+    color: var(--text-secondary-color);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.experience-intro {
+    max-width: 760px;
+
+    color: var(--text-secondary-color);
+
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   WORKFLOW CONTAINER
+========================================================= */
+
+.experience-workflows {
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+
+/* =========================================================
+   STORY CARD
+========================================================= */
+
+.experience-story {
+    position: relative;
+
+    padding: 2.5rem;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 18%,
+            transparent
+        );
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(
+                in srgb,
+                var(--primary-color) 5%,
+                transparent
+            ),
+            transparent 45%
+        );
+
+    box-shadow:
+        0 12px 35px rgba(20, 40, 70, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.experience-story:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        color-mix(
+            in srgb,
+            var(--primary-color) 30%,
+            transparent
+        );
+
+    box-shadow:
+        0 18px 45px rgba(20, 40, 70, 0.10);
+}
+
+
+/* Small accent line */
+
+.experience-story::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 2.5rem;
+
+    width: 52px;
+    height: 3px;
+
+    border-radius: 0 0 4px 4px;
+
+    background: var(--primary-color);
+}
+
+
+/* =========================================================
+   STORY HEADER
+========================================================= */
+
+.story-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1.4rem;
+}
+
+
+.story-number {
+    flex: 0 0 auto;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    color: var(--primary-color);
+
+    letter-spacing: 0.1em;
+
+    padding-top: 0.25rem;
+}
+
+
+.story-heading {
+    flex: 1;
+}
+
+
+.story-category {
+    margin-bottom: 0.4rem;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.15em;
+
+    color: var(--primary-color);
+}
+
+
+.story-title {
+    margin: 0 0 0.35rem 0;
+
+    font-size: 1.55rem;
+    font-weight: 650;
+
+    color: var(--text-color);
+}
+
+
+.story-subtitle {
+    font-size: 0.95rem;
+
+    color: var(--text-secondary-color);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.story-description {
+    max-width: 730px;
+
+    margin:
+        1.6rem 0
+        2.2rem
+        2.6rem;
+
+    color: var(--text-secondary-color);
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   STANDARD FLOW
+========================================================= */
+
+.story-flow {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 0.7rem;
+
+    margin:
+        0.5rem 0
+        2.2rem;
+
+    padding:
+        1.7rem
+        1.3rem;
+
+    border-radius: 17px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--primary-color) 4%,
+            transparent
+        );
+}
+
+
+.flow-step {
+    flex: 1;
+
+    min-width: 0;
+
+    text-align: center;
+}
+
+
+.flow-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin:
+        0 auto
+        0.85rem;
+
+    border-radius: 16px;
+
+    font-size: 1.3rem;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.flow-step:hover .flow-icon {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(20, 40, 70, 0.08);
+}
+
+
+.flow-label {
+    font-size: 0.87rem;
+    font-weight: 650;
+
+    line-height: 1.3;
+
+    color: var(--text-color);
+}
+
+
+.flow-detail {
+    margin-top: 0.3rem;
+
+    font-size: 0.72rem;
+
+    color: var(--text-secondary-color);
+}
+
+
+.flow-arrow {
+    flex: 0 0 auto;
+
+    margin-top: -1.8rem;
+
+    color:
+        color-mix(
+            in srgb,
+            var(--primary-color) 55%,
+            transparent
+        );
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   TECHNOLOGY COLORS
+========================================================= */
+
+/* SharePoint */
+
+.flow-icon.sharepoint {
+    color: #038387;
+    background: rgba(3, 131, 135, 0.10);
+}
+
+
+/* Azure */
+
+.flow-icon.azure {
+    color: #0078D4;
+    background: rgba(0, 120, 212, 0.10);
+}
+
+
+/* Azure Data Factory */
+
+.flow-icon.adf {
+    color: #0067B8;
+    background: rgba(0, 103, 184, 0.10);
+}
+
+
+/* Azure SQL */
+
+.flow-icon.sql {
+    color: #0078D4;
+    background: rgba(0, 120, 212, 0.10);
+}
+
+
+/* Data Model */
+
+.flow-icon.model {
+    color: #6956E8;
+    background: rgba(105, 86, 232, 0.10);
+}
+
+
+/* DAX */
+
+.flow-icon.dax {
+    color: #D4A800;
+    background: rgba(212, 168, 0, 0.11);
+}
+
+
+/* Power BI */
+
+.flow-icon.powerbi {
+    color: #D9B300;
+    background: rgba(249, 214, 22, 0.14);
+}
+
+
+/* =========================================================
+   AUTOMATION GRID
+========================================================= */
+
+.automation-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 1rem;
+
+    margin:
+        0.5rem 0
+        1.5rem;
+}
+
+
+.automation-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    padding: 1.3rem;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 14%,
+            transparent
+        );
+
+    border-radius: 16px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--background-color) 80%,
+            transparent
+        );
+}
+
+
+.automation-icon {
+    flex: 0 0 auto;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 1.2rem;
+}
+
+
+.automation-icon.python {
+    color: #3776AB;
+
+    background:
+        rgba(55, 118, 171, 0.11);
+}
+
+
+.automation-icon.powerautomate {
+    color: #0066FF;
+
+    background:
+        rgba(0, 102, 255, 0.10);
+}
+
+
+.automation-content h5 {
+    margin:
+        0 0
+        0.45rem;
+
+    font-size: 0.95rem;
+    font-weight: 650;
+
+    color: var(--text-color);
+}
+
+
+.automation-content p {
+    margin: 0;
+
+    color: var(--text-secondary-color);
+
+    font-size: 0.82rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   BEFORE → AFTER
+========================================================= */
+
+.transformation {
+    display: grid;
+
+    grid-template-columns:
+        1fr auto 1fr;
+
+    align-items: center;
+
+    gap: 1.5rem;
+
+    margin-top: 1.6rem;
+
+    padding:
+        1.5rem
+        1.7rem;
+
+    border-radius: 17px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--primary-color) 4%,
+            transparent
+        );
+}
+
+
+.transformation-side {
+    text-align: center;
+}
+
+
+.transformation-label {
+    margin-bottom: 0.45rem;
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.13em;
+
+    color: var(--text-secondary-color);
+}
+
+
+.transformation-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    color: var(--text-color);
+}
+
+
+.transformation-after .transformation-value {
+    color: var(--primary-color);
+}
+
+
+.transformation-description {
+    margin-top: 0.4rem;
+
+    font-size: 0.75rem;
+
+    color: var(--text-secondary-color);
+}
+
+
+.transformation-arrow {
+    color: var(--primary-color);
+
+    opacity: 0.7;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   IMPACT
+========================================================= */
+
+.story-impact {
+    display: flex;
+
+    align-items: center;
+
+    gap: 2rem;
+
+    padding-top: 1.6rem;
+
+    border-top:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 15%,
+            transparent
+        );
+}
+
+
+.impact-heading {
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.14em;
+
+    color: var(--text-secondary-color);
+}
+
+
+.impact-items {
+    display: flex;
+
+    gap: 3rem;
+}
+
+
+.impact-item {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 0.55rem;
+}
+
+
+.impact-value {
+    font-size: 1.65rem;
+    font-weight: 700;
+
+    line-height: 1;
+
+    color: var(--primary-color);
+}
+
+
+.impact-label {
+    font-size: 0.72rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.06em;
+
+    color: var(--text-secondary-color);
+}
+
+
+/* =========================================================
+   BUSINESS INSIGHTS
+========================================================= */
+
+.insight-section {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1.5rem;
+
+    padding-top: 1.5rem;
+
+    border-top:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 15%,
+            transparent
+        );
+}
+
+
+.insight-heading {
+    flex: 0 0 auto;
+
+    padding-top: 0.4rem;
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.13em;
+
+    color: var(--text-secondary-color);
+}
+
+
+.insight-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.55rem;
+}
+
+
+.insight-tag {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        0.4rem
+        0.75rem;
+
+    border-radius: 999px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--primary-color) 8%,
+            transparent
+        );
+
+    color: var(--text-color);
+
+    font-size: 0.74rem;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark .experience-story,
+[data-theme="dark"] .experience-story {
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .experience-story {
+        padding: 1.6rem;
+
+        border-radius: 17px;
+    }
+
+
+    .experience-story::before {
+        left: 1.6rem;
+    }
+
+
+    .story-description {
+        margin-left: 0;
+    }
+
+
+    /* Flow becomes vertical */
+
+    .story-flow {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0.8rem;
+    }
+
+
+    .flow-step {
+        display: grid;
+
+        grid-template-columns:
+            50px 1fr;
+
+        grid-template-rows:
+            auto auto;
+
+        column-gap: 0.9rem;
+
+        text-align: left;
+
+        align-items: center;
+    }
+
+
+    .flow-icon {
+        grid-row:
+            1 / 3;
+
+        width: 46px;
+        height: 46px;
+
+        margin: 0;
+    }
+
+
+    .flow-arrow {
+        margin: 0;
+
+        text-align: center;
+
+        transform: rotate(90deg);
+    }
+
+
+    /* Automation cards stack */
+
+    .automation-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Impact */
+
+    .story-impact {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 1rem;
+    }
+
+
+    .impact-items {
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 1rem;
+    }
+
+
+    .impact-item {
+        flex-direction: column;
+
+        gap: 0.35rem;
+    }
+
+
+    /* Insights */
+
+    .insight-section {
+        flex-direction: column;
+
+        gap: 0.8rem;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .story-header {
+        gap: 0.9rem;
+    }
+
+
+    .story-title {
+        font-size: 1.3rem;
+    }
+
+
+    .transformation {
+        grid-template-columns: 1fr;
+
+        gap: 0.8rem;
+    }
+
+
+    .transformation-arrow {
+        transform: rotate(90deg);
+
+        text-align: center;
+    }
+
+
+    .impact-items {
+        flex-direction: column;
+
+        gap: 1.2rem;
+    }
+
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-container {
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+
+/* =========================================================
+   EDUCATION CARD
+========================================================= */
+
+.education-card {
+    position: relative;
+
+    padding: 2.5rem;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 18%,
+            transparent
+        );
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(
+                in srgb,
+                var(--primary-color) 5%,
+                transparent
+            ),
+            transparent 45%
+        );
+
+    box-shadow:
+        0 12px 35px rgba(20, 40, 70, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.education-card:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        color-mix(
+            in srgb,
+            var(--primary-color) 30%,
+            transparent
+        );
+
+    box-shadow:
+        0 18px 45px rgba(20, 40, 70, 0.10);
+}
+
+
+/* Accent line */
+
+.education-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 2.5rem;
+
+    width: 52px;
+    height: 3px;
+
+    border-radius: 0 0 4px 4px;
+
+    background: var(--primary-color);
+}
+
+
+/* =========================================================
+   DEGREE HEADER
+========================================================= */
+
+.education-card-header {
+    display: grid;
+
+    grid-template-columns: 110px 1fr;
+
+    gap: 1.4rem;
+
+    align-items: start;
+}
+
+
+.education-date {
+    padding-top: 0.3rem;
+
+    color: var(--primary-color);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    white-space: nowrap;
+}
+
+
+.education-degree {
+    margin: 0 0 0.35rem;
+
+    color: var(--text-color);
+
+    font-size: 1.45rem;
+    font-weight: 650;
+}
+
+
+.education-school {
+    color: var(--text-color);
+
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+
+.education-location {
+    margin-top: 0.15rem;
+
+    color: var(--text-secondary-color);
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.education-intro {
+    max-width: 740px;
+
+    margin:
+        1.7rem 0
+        2rem
+        124px;
+
+    color: var(--text-secondary-color);
+
+    font-size: 0.92rem;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   ACADEMIC GRID
+========================================================= */
+
+.academic-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+
+.academic-area {
+    padding: 1.45rem;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 14%,
+            transparent
+        );
+
+    border-radius: 17px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--background-color) 80%,
+            transparent
+        );
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.academic-area:hover {
+    transform: translateY(-2px);
+
+    border-color:
+        color-mix(
+            in srgb,
+            var(--primary-color) 25%,
+            transparent
+        );
+}
+
+
+/* =========================================================
+   ACADEMIC CARD TOP
+========================================================= */
+
+.academic-area-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+}
+
+
+.academic-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    font-size: 1rem;
+}
+
+
+.academic-number {
+    color:
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 65%,
+            transparent
+        );
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================================================
+   ACADEMIC ICON COLORS
+========================================================= */
+
+.academic-icon.programming {
+    color: #3776AB;
+
+    background:
+        rgba(55, 118, 171, 0.11);
+}
+
+
+.academic-icon.statistics {
+    color: #6956E8;
+
+    background:
+        rgba(105, 86, 232, 0.11);
+}
+
+
+.academic-icon.nlp {
+    color: #B05A9D;
+
+    background:
+        rgba(176, 90, 157, 0.11);
+}
+
+
+.academic-icon.database {
+    color: #038387;
+
+    background:
+        rgba(3, 131, 135, 0.11);
+}
+
+
+/* =========================================================
+   ACADEMIC CONTENT
+========================================================= */
+
+.academic-title {
+    min-height: 2.5rem;
+
+    margin:
+        0 0
+        0.9rem;
+
+    color: var(--text-color);
+
+    font-size: 1rem;
+    font-weight: 650;
+
+    line-height: 1.3;
+}
+
+
+.academic-keywords {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.4rem;
+
+    margin-bottom: 1rem;
+}
+
+
+.academic-keyword {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        0.32rem
+        0.6rem;
+
+    border-radius: 999px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--primary-color) 7%,
+            transparent
+        );
+
+    color: var(--text-color);
+
+    font-size: 0.67rem;
+    font-weight: 500;
+}
+
+
+.academic-description {
+    margin: 0;
+
+    color: var(--text-secondary-color);
+
+    font-size: 0.8rem;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   ADDITIONAL COURSEWORK
+========================================================= */
+
+.additional-coursework {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1.5rem;
+
+    margin-top: 1.7rem;
+
+    padding-top: 1.5rem;
+
+    border-top:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 15%,
+            transparent
+        );
+}
+
+
+.additional-heading {
+    flex: 0 0 auto;
+
+    padding-top: 0.4rem;
+
+    color: var(--text-secondary-color);
+
+    font-size: 0.67rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.12em;
+}
+
+
+.additional-items {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+}
+
+
+.additional-item {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        0.38rem
+        0.7rem;
+
+    border-radius: 999px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--primary-color) 7%,
+            transparent
+        );
+
+    color: var(--text-color);
+
+    font-size: 0.7rem;
+}
+
+
+/* =========================================================
+   BACHELOR
+========================================================= */
+
+.education-bachelor {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+
+
+.bachelor-intro {
+    margin-bottom: 1.3rem;
+}
+
+
+.bachelor-keywords {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.55rem;
+
+    margin-left: 124px;
+}
+
+
+.bachelor-keyword {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        0.42rem
+        0.8rem;
+
+    border-radius: 999px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--primary-color) 8%,
+            transparent
+        );
+
+    color: var(--text-color);
+
+    font-size: 0.72rem;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark .education-card,
+[data-theme="dark"] .education-card {
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .education-card {
+        padding: 1.6rem;
+
+        border-radius: 17px;
+    }
+
+
+    .education-card::before {
+        left: 1.6rem;
+    }
+
+
+    .education-card-header {
+        grid-template-columns: 1fr;
+
+        gap: 0.7rem;
+    }
+
+
+    .education-date {
+        padding-top: 0;
+    }
+
+
+    .education-intro {
+        margin-left: 0;
+    }
+
+
+    .academic-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .academic-title {
+        min-height: auto;
+    }
+
+
+    .additional-coursework {
+        flex-direction: column;
+
+        gap: 0.8rem;
+    }
+
+
+    .bachelor-keywords {
+        margin-left: 0;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .education-degree {
+        font-size: 1.25rem;
+    }
+
+
+    .academic-area {
+        padding: 1.2rem;
+    }
+
+}
+
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.projects-intro {
+    max-width: 720px;
+
+    margin:
+        0 auto
+        2.5rem;
+
+    text-align: center;
+
+    color: var(--text-secondary-color);
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+.projects-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.project-card {
+    position: relative;
+
+    padding: 2.5rem;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 18%,
+            transparent
+        );
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(
+                in srgb,
+                var(--primary-color) 5%,
+                transparent
+            ),
+            transparent 45%
+        );
+
+    box-shadow:
+        0 12px 35px rgba(20, 40, 70, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        color-mix(
+            in srgb,
+            var(--primary-color) 30%,
+            transparent
+        );
+
+    box-shadow:
+        0 18px 45px rgba(20, 40, 70, 0.10);
+}
+
+
+.project-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 2.5rem;
+
+    width: 52px;
+    height: 3px;
+
+    background: var(--primary-color);
+
+    border-radius: 0 0 4px 4px;
+}
+
+
+/* =========================================================
+   PROJECT HEADER
+========================================================= */
+
+.project-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1.4rem;
+}
+
+
+.project-number {
+    flex: 0 0 auto;
+
+    padding-top: 0.25rem;
+
+    color: var(--primary-color);
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+}
+
+
+.project-heading {
+    flex: 1;
+}
+
+
+.project-category {
+    margin-bottom: 0.4rem;
+
+    color: var(--primary-color);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+
+.project-title {
+    margin: 0 0 0.35rem;
+
+    color: var(--text-color);
+
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+
+
+.project-subtitle {
+    color: var(--text-secondary-color);
+
+    font-size: 0.92rem;
+}
+
+
+.project-description {
+    max-width: 730px;
+
+    margin:
+        1.6rem 0
+        2rem
+        2.6rem;
+
+    color: var(--text-secondary-color);
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROJECT FLOW
+========================================================= */
+
+.project-flow {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 0.7rem;
+
+    margin-bottom: 2rem;
+
+    padding:
+        1.6rem
+        1.3rem;
+
+    border-radius: 17px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--primary-color) 4%,
+            transparent
+        );
+}
+
+
+.project-flow-step {
+    flex: 1;
+
+    min-width: 0;
+
+    text-align: center;
+}
+
+
+.project-flow-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin:
+        0 auto
+        0.8rem;
+
+    border-radius: 15px;
+
+    font-size: 1.15rem;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.project-flow-step:hover .project-flow-icon {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(20, 40, 70, 0.08);
+}
+
+
+.project-flow-label {
+    color: var(--text-color);
+
+    font-size: 0.82rem;
+    font-weight: 650;
+}
+
+
+.project-flow-detail {
+    margin-top: 0.3rem;
+
+    color: var(--text-secondary-color);
+
+    font-size: 0.7rem;
+}
+
+
+.project-flow-arrow {
+    flex: 0 0 auto;
+
+    margin-top: -1.6rem;
+
+    color: var(--primary-color);
+
+    opacity: 0.55;
+
+    font-size: 0.78rem;
+}
+
+
+/* =========================================================
+   PROJECT ICON COLORS
+========================================================= */
+
+.project-flow-icon.project-input {
+    color: #6c757d;
+    background: rgba(108, 117, 125, 0.10);
+}
+
+
+.project-flow-icon.project-ai {
+    color: #10A37F;
+    background: rgba(16, 163, 127, 0.10);
+}
+
+
+.project-flow-icon.project-rag {
+    color: #6956E8;
+    background: rgba(105, 86, 232, 0.10);
+}
+
+
+.project-flow-icon.project-output {
+    color: #038387;
+    background: rgba(3, 131, 135, 0.10);
+}
+
+
+.project-flow-icon.project-ingest {
+    color: #FF3621;
+    background: rgba(255, 54, 33, 0.10);
+}
+
+
+.project-flow-icon.project-bronze {
+    color: #A97142;
+    background: rgba(169, 113, 66, 0.11);
+}
+
+
+.project-flow-icon.project-silver {
+    color: #7A8793;
+    background: rgba(122, 135, 147, 0.11);
+}
+
+
+.project-flow-icon.project-gold {
+    color: #D4A800;
+    background: rgba(212, 168, 0, 0.11);
+}
+
+
+/* =========================================================
+   PROJECT FOOTER
+========================================================= */
+
+.project-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1.5rem;
+
+    padding-top: 1.5rem;
+
+    border-top:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 15%,
+            transparent
+        );
+}
+
+
+.project-technologies {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.45rem;
+}
+
+
+.project-tech {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        0.36rem
+        0.68rem;
+
+    border-radius: 999px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--primary-color) 7%,
+            transparent
+        );
+
+    color: var(--text-color);
+
+    font-size: 0.68rem;
+    font-weight: 500;
+}
+
+
+.project-meta {
+    flex: 0 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+}
+
+
+.project-note {
+    color: var(--text-secondary-color);
+
+    font-size: 0.7rem;
+}
+
+
+.project-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.45rem;
+
+    color: var(--primary-color);
+
+    font-size: 0.76rem;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   PROJECT MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .project-card {
+        padding: 1.6rem;
+
+        border-radius: 17px;
+    }
+
+
+    .project-card::before {
+        left: 1.6rem;
+    }
+
+
+    .project-description {
+        margin-left: 0;
+    }
+
+
+    .project-flow {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .project-flow-step {
+        display: grid;
+
+        grid-template-columns:
+            50px 1fr;
+
+        grid-template-rows:
+            auto auto;
+
+        column-gap: 0.9rem;
+
+        align-items: center;
+
+        text-align: left;
+    }
+
+
+    .project-flow-icon {
+        grid-row: 1 / 3;
+
+        width: 46px;
+        height: 46px;
+
+        margin: 0;
+    }
+
+
+    .project-flow-arrow {
+        margin: 0;
+
+        text-align: center;
+
+        transform: rotate(90deg);
+    }
+
+
+    .project-footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   CERTIFICATIONS
+========================================================= */
+
+.certifications-intro {
+    max-width: 650px;
+
+    margin:
+        0 auto
+        2.5rem;
+
+    text-align: center;
+
+    color: var(--text-secondary-color);
+
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+
+.certifications-grid {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 1rem;
+}
+
+
+.certification-card {
+    position: relative;
+
+    padding: 1.7rem;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 16%,
+            transparent
+        );
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(
+                in srgb,
+                var(--primary-color) 4%,
+                transparent
+            ),
+            transparent
+        );
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.certification-card:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        color-mix(
+            in srgb,
+            var(--primary-color) 30%,
+            transparent
+        );
+
+    box-shadow:
+        0 12px 30px rgba(20, 40, 70, 0.08);
+}
+
+
+/* =========================================================
+   CERTIFICATION OFFICIAL LOGOS
+========================================================= */
+
+.certification-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1.4rem;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--primary-color) 5%,
+            transparent
+        );
+}
+
+.certification-icon.dbt {
+    background: rgba(255, 105, 75, 0.07);
+}
+
+.certification-icon.databricks {
+    background: rgba(255, 54, 33, 0.07);
+}
+
+
+.certification-logo {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+
+.certification-category {
+    margin-bottom: 0.5rem;
+
+    color: var(--primary-color);
+
+    font-size: 0.65rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+}
+
+
+.certification-title {
+    margin:
+        0 0
+        0.5rem;
+
+    color: var(--text-color);
+
+    font-size: 1rem;
+    font-weight: 650;
+
+    line-height: 1.4;
+}
+
+
+.certification-issuer {
+    color: var(--text-secondary-color);
+
+    font-size: 0.75rem;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .certification-card {
+        padding: 1.4rem;
+    }
+
+}
+
+
+/* =========================================================
+   OFFICIAL PROJECT BRAND LOGOS
+========================================================= */
+
+.project-title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.project-title-row .project-title {
+    margin-bottom: 0.35rem;
+}
+
+.project-brand-logo {
+    width: auto;
+    height: 24px;
+
+    object-fit: contain;
+
+    margin-top: -0.25rem;
+}
+
+
+/* Logos inside workflow nodes */
+
+.project-flow-logo {
+    display: block;
+
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+}
+
+
+/* Remove generic color when using an image */
+
+.project-flow-icon:has(.project-flow-logo) {
+    background: transparent;
+}
+
+
+/* =========================================================
+   CERTIFICATION DESCRIPTION
+========================================================= */
+
+.certification-description {
+    margin:
+        1rem 0
+        0;
+
+    padding-top: 1rem;
+
+    border-top:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--text-secondary-color) 12%,
+            transparent
+        );
+
+    color: var(--text-secondary-color);
+
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   HERO → ABOUT SPACING
+========================================================= */
+
+/* Reduce the large empty space below the hero section */
+#hero {
+    min-height: auto !important;
+    padding-bottom: 6rem !important;
+}
+
+/* Reduce space above About Me */
+#about {
+    padding-top: 5rem !important;
+}

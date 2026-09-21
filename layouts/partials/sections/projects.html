@@ -1,0 +1,219 @@
+{{- $projects := .Site.Params.projects -}}
+
+{{- if .Site.Params.projects.enable -}}
+
+<section id="projects" class="py-5">
+
+    <div class="container">
+
+        <h3 class="text-center">
+            {{ $projects.title | default "Projects" }}
+        </h3>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-sm-12 col-md-10 col-lg-9 py-5">
+
+
+                <!-- Intro -->
+
+                {{ with $projects.intro }}
+
+                <p class="projects-intro">
+                    {{ . }}
+                </p>
+
+                {{ end }}
+
+
+
+                <!-- Projects -->
+
+                <div class="projects-container">
+
+                    {{ range $projects.items }}
+
+                    <article class="project-card">
+
+
+                        <!-- Header -->
+
+                        <div class="project-header">
+
+                            <div class="project-number">
+                                {{ .number }}
+                            </div>
+
+
+                            <div class="project-heading">
+
+                                <div class="project-category">
+                                    {{ .category }}
+                                </div>
+
+                            <div class="project-title-row">
+
+                                <h4 class="project-title">
+                                    {{ .title }}
+                                </h4>
+
+                                {{ with .logo }}
+
+                                <img
+                                    class="project-brand-logo"
+                                    src="{{ . | relURL }}"
+                                    alt=""
+                                >
+
+                                {{ end }}
+
+                            </div>
+
+                                <div class="project-subtitle">
+                                    {{ .subtitle }}
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Description -->
+
+                        <p class="project-description">
+                            {{ .description }}
+                        </p>
+
+
+
+                        <!-- Visual Flow -->
+
+                        {{ with .flow }}
+
+                        <div class="project-flow">
+
+                            {{ range $index, $step := . }}
+
+                                {{ if gt $index 0 }}
+
+                                <div class="project-flow-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+
+                                {{ end }}
+
+
+                                <div class="project-flow-step">
+
+                                    <div class="project-flow-icon {{ $step.class }}">
+
+                                        {{ if $step.image }}
+
+                                            <img
+                                                src="{{ $step.image | relURL }}"
+                                                alt="{{ $step.label }}"
+                                                class="project-flow-logo"
+                                            >
+
+                                        {{ else }}
+
+                                            <i class="{{ $step.icon }}"></i>
+
+                                        {{ end }}
+
+                                    </div>
+
+                                    <div class="project-flow-label">
+                                        {{ $step.label }}
+                                    </div>
+
+                                    <div class="project-flow-detail">
+                                        {{ $step.detail }}
+                                    </div>
+
+                                </div>
+
+                            {{ end }}
+
+                        </div>
+
+                        {{ end }}
+
+
+
+                        <!-- Bottom -->
+
+                        <div class="project-footer">
+
+
+                            <!-- Technologies -->
+
+                            {{ with .technologies }}
+
+                            <div class="project-technologies">
+
+                                {{ range . }}
+
+                                <span class="project-tech">
+                                    {{ . }}
+                                </span>
+
+                                {{ end }}
+
+                            </div>
+
+                            {{ end }}
+
+
+
+                            <!-- Links / Note -->
+
+                            <div class="project-meta">
+
+                                {{ with .note }}
+
+                                <span class="project-note">
+                                    {{ . }}
+                                </span>
+
+                                {{ end }}
+
+
+                                {{ with .github }}
+
+                                <a
+                                    class="project-link"
+                                    href="{{ . }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                                </a>
+
+                                {{ end }}
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+                    {{ end }}
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{{- end -}}

@@ -1,0 +1,346 @@
+{{- $experience := .Site.Language.Params.experience | default .Site.Params.experience -}}
+
+{{- if $experience.enable -}}
+
+<section id="experience" class="py-5">
+    <div class="container">
+
+        <!-- =================================================
+             SECTION TITLE
+        ================================================== -->
+
+        <h3 class="text-center">
+            {{ $experience.title | default "Experience" }}
+        </h3>
+
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-9 py-5">
+
+
+                <!-- =================================================
+                     EXPERIENCE HEADER
+                ================================================== -->
+
+                <div class="experience-header">
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+
+                        <div>
+                            <h4 class="mb-1">
+                                {{ $experience.role }}
+                            </h4>
+
+                            <div class="experience-company">
+                                {{ $experience.company }}
+                            </div>
+                        </div>
+
+
+                        <div class="experience-meta mt-3 mt-md-0 text-md-end">
+
+                            <div>
+                                {{ $experience.date }}
+                            </div>
+
+                            <div>
+                                {{ $experience.location }}
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{ with $experience.intro }}
+
+                    <p class="experience-intro mt-4 mb-0">
+                        {{ . }}
+                    </p>
+
+                    {{ end }}
+
+                </div>
+
+
+
+                <!-- =================================================
+                     WORKFLOW STORIES
+                ================================================== -->
+
+                <div class="experience-workflows mt-5">
+
+                    {{ range $experience.workflows }}
+
+                    <article class="experience-story">
+
+
+                        <!-- =========================================
+                             STORY HEADER
+                        ========================================== -->
+
+                        <div class="story-header">
+
+                            <div class="story-number">
+                                {{ .number }}
+                            </div>
+
+
+                            <div class="story-heading">
+
+                                <div class="story-category">
+                                    {{ .category }}
+                                </div>
+
+                                <h4 class="story-title">
+                                    {{ .title }}
+                                </h4>
+
+                                <div class="story-subtitle">
+                                    {{ .subtitle }}
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =========================================
+                             DESCRIPTION
+                        ========================================== -->
+
+                        {{ with .description }}
+
+                        <p class="story-description">
+                            {{ . }}
+                        </p>
+
+                        {{ end }}
+
+
+
+                        <!-- =========================================
+                             STANDARD DATA FLOW
+                             Used by Story 01 and Story 03
+                        ========================================== -->
+
+                        {{ with .steps }}
+
+                        <div class="story-flow">
+
+                            {{ range $index, $step := . }}
+
+
+                                {{ if gt $index 0 }}
+
+                                <div class="flow-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+
+                                {{ end }}
+
+
+                                <div class="flow-step">
+
+                                    <div class="flow-icon {{ $step.class }}">
+                                        <i class="{{ $step.icon }}"></i>
+                                    </div>
+
+                                    <div class="flow-label">
+                                        {{ $step.label }}
+                                    </div>
+
+                                    <div class="flow-detail">
+                                        {{ $step.detail }}
+                                    </div>
+
+                                </div>
+
+
+                            {{ end }}
+
+                        </div>
+
+                        {{ end }}
+
+
+
+                        <!-- =========================================
+                             AUTOMATION STORIES
+                             Used by Story 02
+                        ========================================== -->
+
+                        {{ with .automationItems }}
+
+                        <div class="automation-grid">
+
+                            {{ range . }}
+
+                            <div class="automation-card">
+
+                                <div class="automation-icon {{ .class }}">
+                                    <i class="{{ .icon }}"></i>
+                                </div>
+
+                                <div class="automation-content">
+
+                                    <h5>
+                                        {{ .title }}
+                                    </h5>
+
+                                    <p>
+                                        {{ .text }}
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            {{ end }}
+
+                        </div>
+
+                        {{ end }}
+
+
+
+                        <!-- =========================================
+                             BEFORE → AFTER
+                             Used by Story 02
+                        ========================================== -->
+
+                        {{ with .transformation }}
+
+                        <div class="transformation">
+
+                            <div class="transformation-side transformation-before">
+
+                                <div class="transformation-label">
+                                    Before
+                                </div>
+
+                                <div class="transformation-value">
+                                    {{ .before }}
+                                </div>
+
+                                <div class="transformation-description">
+                                    {{ .beforeLabel }}
+                                </div>
+
+                            </div>
+
+
+                            <div class="transformation-arrow">
+
+                                <i class="fas fa-arrow-right"></i>
+
+                            </div>
+
+
+                            <div class="transformation-side transformation-after">
+
+                                <div class="transformation-label">
+                                    After
+                                </div>
+
+                                <div class="transformation-value">
+                                    {{ .after }}
+                                </div>
+
+                                <div class="transformation-description">
+                                    {{ .afterLabel }}
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {{ end }}
+
+
+
+                        <!-- =========================================
+                             INSIGHT TAGS
+                             Used by Story 03
+                        ========================================== -->
+
+                        {{ with .insightTags }}
+
+                        <div class="insight-section">
+
+                            <div class="insight-heading">
+                                Business Insights
+                            </div>
+
+                            <div class="insight-tags">
+
+                                {{ range . }}
+
+                                <span class="insight-tag">
+                                    {{ . }}
+                                </span>
+
+                                {{ end }}
+
+                            </div>
+
+                        </div>
+
+                        {{ end }}
+
+
+
+                        <!-- =========================================
+                             IMPACT
+                             Used by Story 01
+                        ========================================== -->
+
+                        {{ with .impact }}
+
+                        <div class="story-impact">
+
+                            <div class="impact-heading">
+                                Impact
+                            </div>
+
+
+                            <div class="impact-items">
+
+                                {{ range . }}
+
+                                <div class="impact-item">
+
+                                    <div class="impact-value">
+                                        {{ .value }}
+                                    </div>
+
+                                    <div class="impact-label">
+                                        {{ .label }}
+                                    </div>
+
+                                </div>
+
+                                {{ end }}
+
+                            </div>
+
+                        </div>
+
+                        {{ end }}
+
+
+                    </article>
+
+                    {{ end }}
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{{- end -}}

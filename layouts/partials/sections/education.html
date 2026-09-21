@@ -1,0 +1,261 @@
+{{- $education := .Site.Params.education -}}
+{{- if $education.enable -}}
+
+<section id="education" class="py-5">
+
+    <div class="container">
+
+        <!-- =================================================
+             SECTION TITLE
+        ================================================== -->
+
+        <h3 class="text-center">
+            {{ $education.title | default "Education" }}
+        </h3>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-sm-12 col-md-10 col-lg-9 py-5">
+
+                <div class="education-container">
+
+
+                    {{ range $education.items }}
+
+
+                    <!-- =================================================
+                         MASTER'S DEGREE
+                    ================================================== -->
+
+                    {{ if eq .type "master" }}
+
+                    <article class="education-card education-master">
+
+
+                        <!-- Degree Header -->
+
+                        <div class="education-card-header">
+
+                            <div class="education-date">
+                                {{ .date }}
+                            </div>
+
+
+                            <div class="education-degree-info">
+
+                                <h4 class="education-degree">
+                                    {{ .degree }}
+                                </h4>
+
+                                <div class="education-school">
+                                    {{ .school }}
+                                </div>
+
+                                <div class="education-location">
+                                    {{ .location }}
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Introduction -->
+
+                        {{ with .intro }}
+
+                        <p class="education-intro">
+                            {{ . }}
+                        </p>
+
+                        {{ end }}
+
+
+
+                        <!-- =============================================
+                             ACADEMIC AREAS
+                        ============================================== -->
+
+                        {{ with .areas }}
+
+                        <div class="academic-grid">
+
+                            {{ range . }}
+
+                            <div class="academic-area">
+
+
+                                <!-- Area top -->
+
+                                <div class="academic-area-top">
+
+                                    <div class="academic-icon {{ .class }}">
+                                        <i class="{{ .icon }}"></i>
+                                    </div>
+
+                                    <div class="academic-number">
+                                        {{ .number }}
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Area title -->
+
+                                <h5 class="academic-title">
+                                    {{ .title }}
+                                </h5>
+
+
+                                <!-- Keywords -->
+
+                                {{ with .keywords }}
+
+                                <div class="academic-keywords">
+
+                                    {{ range . }}
+
+                                    <span class="academic-keyword">
+                                        {{ . }}
+                                    </span>
+
+                                    {{ end }}
+
+                                </div>
+
+                                {{ end }}
+
+
+                                <!-- Description -->
+
+                                <p class="academic-description">
+                                    {{ .description }}
+                                </p>
+
+
+                            </div>
+
+                            {{ end }}
+
+                        </div>
+
+                        {{ end }}
+
+
+
+                        <!-- =============================================
+                             ADDITIONAL COURSEWORK
+                        ============================================== -->
+
+                        {{ with .additional }}
+
+                        <div class="additional-coursework">
+
+                            <div class="additional-heading">
+                                Additional Coursework
+                            </div>
+
+                            <div class="additional-items">
+
+                                {{ range . }}
+
+                                <span class="additional-item">
+                                    {{ . }}
+                                </span>
+
+                                {{ end }}
+
+                            </div>
+
+                        </div>
+
+                        {{ end }}
+
+
+                    </article>
+
+
+                    <!-- =================================================
+                         BACHELOR'S DEGREE
+                    ================================================== -->
+
+                    {{ else if eq .type "bachelor" }}
+
+                    <article class="education-card education-bachelor">
+
+
+                        <div class="education-card-header">
+
+                            <div class="education-date">
+                                {{ .date }}
+                            </div>
+
+
+                            <div class="education-degree-info">
+
+                                <h4 class="education-degree">
+                                    {{ .degree }}
+                                </h4>
+
+                                <div class="education-school">
+                                    {{ .school }}
+                                </div>
+
+                                <div class="education-location">
+                                    {{ .location }}
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        {{ with .intro }}
+
+                        <p class="education-intro bachelor-intro">
+                            {{ . }}
+                        </p>
+
+                        {{ end }}
+
+
+
+                        {{ with .keywords }}
+
+                        <div class="bachelor-keywords">
+
+                            {{ range . }}
+
+                            <span class="bachelor-keyword">
+                                {{ . }}
+                            </span>
+
+                            {{ end }}
+
+                        </div>
+
+                        {{ end }}
+
+
+                    </article>
+
+                    {{ end }}
+
+
+                    {{ end }}
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{{- end -}}
