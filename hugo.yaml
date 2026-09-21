@@ -1,4 +1,4 @@
-baseURL: "http://localhost:1313/"
+baseURL: "https://jiayiliu-7.github.io/jiayi-personal-website/"
 languageCode: "en-us"
 title: "Jiayi Liu"
 theme: "hugo-profile"
